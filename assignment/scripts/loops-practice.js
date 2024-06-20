@@ -13,12 +13,18 @@ for (let i=0; i<4; i++) {
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
+// create a variable with starting value; 
+//loops should run while this is true; 
+//the variable should change like this between loops
 for (let i=0; i<6; i++){
   console.log(i);
 }
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
+//create variable i starting at 3;
+//stop the loop when i hits 6;
+//increase by 1 each loop
 for (let i=3; i<6; i++){
   console.log(i);
 }
@@ -26,6 +32,10 @@ for (let i=3; i<6; i++){
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
+
+//create the variable i and set it equal to the number 2;
+//the logic will be true as long as i is less than 12;
+//increase i by 2 each time the loop runs
 for (let i=2; i<12; i+=2){
   console.log(i);
 }
@@ -42,6 +52,8 @@ let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
 console.log('Some stars:');
+//Create a new variable star and set it equal to the first string in the array
+//each time the loop runs star becomes the next string in the array
 for (star of stars){
   console.log(star);
 }
@@ -52,6 +64,8 @@ console.log('---- 3. While loop ----');
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
 let i=0;
+//while the variable i is less than the length of the array, the loop will run
+// the ouput will be the items in the array
 while(i<stars.length) {
   console.log (stars[i]);
   i++;
